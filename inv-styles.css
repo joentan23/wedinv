@@ -1,0 +1,121 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #fdfdfd;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .invitation-container1 {
+    width: 8in;
+    height: 10in;
+    background: #fff url('tempback1.jpg') no-repeat center;
+    background-size: cover;
+    border: 5px solid #eee;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  .invitation-container2 {
+    width: 8in;
+    height: 10in;
+    background: #fff url('tempback2.jpg') no-repeat center;
+    background-size: cover;
+    border: 5px solid #eee;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  .invitation-container3 {
+    width: 8in;
+    height: 10in;
+    background: #fff url('tempback3.jpg') no-repeat center;
+    background-size: cover;
+    border: 5px solid #eee;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  .header p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 3;
+    color: #1d1d1d;
+  }
+  .header h1{
+    font-size: 100px;
+    line-height: .8;
+    margin: 10px 0;
+    color: #191718;
+    stroke-width: 2px;
+    stroke: black;
+  }
+  .details{
+    font-family: Monrovia;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 1;
+    color: #1f1f1f;
+  }
+  .invitation {
+    width: 600px;
+    height: 800px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+
+  @media (max-width: 768px) {
+    .invitation-container1, .invitation-container2, .invitation-container3, .details {
+      padding: 10px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .details{
+      font-family: Monrovia;
+      font-size: 10px;
+      letter-spacing: 2px;
+      line-height: 1;
+      color: #1f1f1f;
+    }
+    .header h1 {
+      font-size: 24px;
+    }
+    .header p {
+      font-size: 14px;
+    }
+    .nav-links li {
+      margin: 0 10px;
+    }
+    .nav-links a {
+      font-size: 14px;
+    }
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 1px;
+    }
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav-links li {
+      margin: 5px 0;
+    }
+    .header h1 {
+      font-size: 20px;
+    }
+    .header p {
+      font-size: 12px;
+    }
+    .invitation-content {
+      width: 90%;
+      font-size: 16px;
+    }
+  }

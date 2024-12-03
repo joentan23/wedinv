@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design 1 - Customize Invitation</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="form-styles.css">
+</head>
+<body>
+  <div class="navbar">
+    <ul class="nav-links">
+      <li><a href="WedInv.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Products/Services</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+  <div class="form-container">
+    <h1>Personalize Your Wedding Invitation</h1>
+    <p>Fill in the details below to customize your invitation.</p>
+
+    <form id="weddingForm" action="invitation3.html" method="GET">
+      <div class="form-group">
+        <label for="groomName">First Name of the Groom:</label>
+        <input type="text" id="groomName" name="groomName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="brideName">First Name of the Bride:</label>
+        <input type="text" id="brideName" name="brideName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="weddingLocation">Location of the Wedding:</label>
+        <input type="text" id="weddingLocation" name="weddingLocation" required>
+      </div>
+
+      <div class="form-group">
+        <label for="weddingDate">Date of the Wedding:</label>
+        <input type="date" id="weddingDate" name="weddingDate" required>
+      </div>  
+
+      <div class="form-group">
+        <label for="weddingTime">Time of the Wedding:</label>
+        <input type="time" id="weddingTime" name="weddingTime" required>
+      </div>
+
+      <div class="form-group">
+        <label for="attire">Theme:</label>
+        <input type="text" id="attire" name="attire" required>
+      </div>
+
+      <button type="submit" class="submit-btn">Generate Invitation</button>
+    </form>
+  </div>
+</body>
+</html>
